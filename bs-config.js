@@ -14,16 +14,17 @@
  */
 module.exports = {
     'files': [
-        'src/**/*.html',
-        'src/images/*',
-        'src/scripts/*.js',
-        'src/styles/*.min.css'
+        'build/**/*.html',
+        'build/styles/*.min.css',
+        'build/scripts/*.js',
+        'build/images/*',
+        'build/fonts/*'
     ],
     'watchOptions': {
         'ignoreInitial': true
     },
     'server': {
-        'baseDir': 'src',
+        'baseDir': 'build',
     },
     'port': 9000,
     'open': 'local',

@@ -19,7 +19,7 @@ gulp.task('dist', function() {
     console.log('dist deleted!');
     fs.mkdirSync('dist');
 
-    gulp.src('src/**/*')
+    gulp.src('build/**/*')
         .pipe(gulp.dest('dist'));
 
     var ver = 'dist/version.txt';

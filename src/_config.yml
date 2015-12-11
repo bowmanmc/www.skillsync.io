@@ -1,0 +1,16 @@
+
+#
+# SkillSync.io Jekyll Settings
+#
+
+# Site settings
+title: SkillSync.io
+email: support@skillsync.io
+description: SkillSync is an application to connect employers with candidates
+baseurl: ""
+url: "http://skillsync.io"
+twitter_username: webslingerm
+github_username:  bowmanmc
+
+# Build settings
+markdown: kramdown

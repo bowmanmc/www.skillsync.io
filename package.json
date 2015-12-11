@@ -4,21 +4,21 @@
     "description": "",
     "author": "SkillSync",
     "scripts": {
-        "clean": "rimraf \"src/styles/*\" \"src/scripts/*\"",
+        "clean": "rimraf \"build/*\"",
         "deploy": "gulp dist; gulp publish",
-        "dist": "gulp dist",
+        "dist": "npm run clean && npm run js && npm run sass && npm run jekyll && gulp dist",
+        "jekyll": "jekyll build --source src --destination build",
         "js": "webpack -d --progress --colors",
-        "sass": "node-sass --include-path src/sass --include-path node_modules/bootstrap-sass/assets/stylesheets --include-path node_modules/font-awesome/scss src/sass/main.scss src/styles/site.css",
+        "sass": "node-sass --include-path src/sass src/sass/main.scss src/styles/site.css",
         "postsass": "postcss -r -c postcss.config.json src/styles/site.css && cssmin src/styles/site.css > src/styles/site.min.css",
-        "start": "npm run clean && npm run js && parallelshell \"browser-sync start --config bs-config.js\" \"npm run watch\"",
+        "start": "npm run clean && parallelshell \"browser-sync start --config bs-config.js\" \"npm run watch\"",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "watch": "parallelshell \"npm run watch:sass\" \"npm run watch:js\"",
+        "watch": "parallelshell \"npm run watch:jekyll\" \"npm run watch:js\" \"npm run watch:sass\"",
+        "watch:jekyll": "nodemon -w src -e html,md,png,jpg,gif,yml,xml,js,css --ignore src/javascript --delay 1 -x \"npm run jekyll\"",
         "watch:js": "webpack -d --progress --colors --watch",
         "watch:sass": "nodemon -e scss -w src/sass -x \"npm run sass\""
     },
     "dependencies": {
-        "bootstrap-sass": "^3.3.5",
-        "font-awesome": "^4.4.0",
         "jquery": "^2.1.4"
     },
     "devDependencies": {
