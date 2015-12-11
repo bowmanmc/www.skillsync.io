@@ -41,7 +41,7 @@ gulp.task('dist', function() {
     fs.appendFileSync(ver, '\nSkillSync.io - WWW');
     fs.appendFileSync(ver, '\n===================');
     fs.appendFileSync(ver, '\nName: ' + pkg.name);
-    fs.appendFileSync(ver, '\nURL: https://github.com/bowmanmc/ss-prelaunch');
+    fs.appendFileSync(ver, '\nURL: https://github.com/bowmanmc/skillsync.io');
     fs.appendFileSync(ver, '\nVersion: ' + pkg.version);
     fs.appendFileSync(ver, '\nGit Branch: ' + branch);
     fs.appendFileSync(ver, '\nGit Revision: ' + rev);
