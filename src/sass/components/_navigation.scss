@@ -1,0 +1,19 @@
+$color-nav-bg: #333;
+$color-nav-txt: #eee;
+
+.nav {
+    background-color: $color-nav-bg;
+    color: $color-nav-txt;
+
+    .logo {
+        width: 32px;
+    }
+    
+    li {
+        
+        a {
+            color: $color-nav-txt;
+        }
+    }
+
+}

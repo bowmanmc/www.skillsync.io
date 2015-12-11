@@ -1,10 +1,13 @@
 @charset 'utf-8';
 
 // Libraries
-@import "bourbon/bourbon";
-@import "neat/neat";
+@import 'reset/reset';
+@import 'bourbon/bourbon';
+@import 'neat/neat';
 
+// Defaults, Components, then Pages
 @import 'defaults/colors',
         'defaults/tags',
+        'components/navigation',
         'pages/main'
 ;
