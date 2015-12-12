@@ -1,13 +1,16 @@
-<nav class="nav">
 
-    <img class="logo" src="images/logo-128x128.png" alt="SkillSync" />
+<header class="header">
 
-    <ul class="menu">
-        {% for page in site.pages %} 
-            {% if page.title %}
-                <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-            {% endif %} 
-        {% endfor %}
-    </ul>
+    <div class="logo">
+        <a href="/"><img src="/images/logo-128-text.png" alt="SkillSync" /></a>
+    </div>
+    
+    <nav class="nav">
+    {% for page in site.pages %} 
+        {% if page.title %}
+        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+        {% endif %} 
+    {% endfor %}
+    </nav>
 
-</nav>
+</header>

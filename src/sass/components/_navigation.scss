@@ -1,19 +1,31 @@
 $color-nav-bg: #333;
 $color-nav-txt: #eee;
 
-.nav {
-    background-color: $color-nav-bg;
-    color: $color-nav-txt;
+$nav-height: 48px;
 
+.header {
+
+    @include linear-gradient(to top, $color-nav-bg, lighten($color-nav-bg, 7%));
+
+    color: $color-nav-txt;
+    width: 100%;
+    
     .logo {
-        width: 32px;
+        display: inline-block;
+        margin: 0.25em 0.5em;
+
+        img {
+            height: $nav-height;
+        }
     }
     
-    li {
+    .nav {
+        border: 1px solid #00f;
+        display: inline-block;
+        text-align: right;
         
         a {
             color: $color-nav-txt;
         }
     }
-
 }
