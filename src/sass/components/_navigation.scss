@@ -20,12 +20,21 @@ $nav-height: 48px;
     }
     
     .nav {
-        border: 1px solid #00f;
         display: inline-block;
+        height: $nav-height;
         text-align: right;
-        
+        vertical-align: top;
+
         a {
             color: $color-nav-txt;
+            display: inline-block;
+            height: $nav-height;
+            padding: ($nav-height / 2) 1.0em;
+            
+            &:hover {
+                background: lighten($color-nav-bg, 5%);
+                color: lighten($color-nav-txt, 10%);
+            }
         }
     }
 }
