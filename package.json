@@ -5,7 +5,7 @@
     "author": "SkillSync",
     "scripts": {
         "clean": "rimraf \"build/*\"",
-        "deploy": "gulp dist; gulp publish",
+        "deploy": "npm run dist; gulp publish",
         "dist": "npm run clean && npm run js && npm run sass && npm run jekyll && gulp dist",
         "jekyll": "jekyll build --source src --destination build",
         "js": "webpack -d --progress --colors",

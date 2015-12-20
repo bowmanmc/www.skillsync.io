@@ -15,7 +15,7 @@ $logo-height: 50px;
   width: 100%;
   margin: 0;
   height: 857.62px;
-  opacity: .4;
+  opacity: .5;
   position: absolute;
   top: 0;
   left: 0;
@@ -84,6 +84,6 @@ $logo-height: 50px;
     background-color: $color-contrast;
     color: $color-background-light;
     font-family: "Lato";
-    font-size: modular-scale(3);
+    font-size: modular-scale(2);
   }
 }
