@@ -1,5 +1,6 @@
 $logo-height: 50px;
 
+
 .body {
   color: $color-txt;
   @include span-columns(12);
@@ -78,12 +79,12 @@ $logo-height: 50px;
   }
 
   .submitButton {
-    height: 55x;
+    height: 65px;
     width: 250px;
     border-style: none;
-    background-color: $color-contrast;
+    @include linear-gradient($color-green, $color-teal);
     color: $color-background-light;
     font-family: "Lato";
-    font-size: modular-scale(2);
+    font-size: modular-scale(1.5);
   }
 }
