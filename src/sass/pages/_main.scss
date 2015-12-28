@@ -1,90 +1,79 @@
 $logo-height: 50px;
 
-
-.body {
-  color: $color-txt;
-  @include span-columns(12);
-}
-
-.home {
-  position: relative;
-}
-
-.background {
-  background: url(/images/girl-train-cropped-2.jpg) no-repeat center;
-  background-size: cover;
-  width: 100%;
-  margin: 0;
-  height: 857.62px;
-  opacity: .5;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
 .logo {
-    display: inline-block;
-    margin: 0.25em 0.5em;
+
 
     .logoImg {
         height: $logo-height;
         position: absolute;
-        top: 0.25em;
-        left: 0.5em;
+        top: 0.5em;
+        left: 0.75em;
         z-index: 2;
     }
 
     }
 
+.body {
+  @include span-columns(12);
+}
+
+.home {
+  background:
+    url(/images/monitors-color.png) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  margin: 0;
+  height: 800px;
+  color: $color-background-light;
+}
+
 .landingTxt {
-  position: absolute;
-  top:0;
-  left:0;
-  z-index: 2;
-  @include shift(5);
-  @include span-columns(7);
   padding-top: 200px;
+  text-align: center;
+  color: $color-background-light;
 
   .tagline {
     margin-bottom: 30px;
+    @include shift(2);
+    @include span-columns(8);
   }
 
   .landingP {
-    @include span-columns(6 of 7);
-    @include shift(0.5);
+    margin-bottom: 50px;
+    @include shift(3);
+    @include span-columns(6);
   }
 }
 
 .inputForm {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  @include shift(5.25);
+  @include shift(3);
   @include span-columns(6);
-  padding-top: 400px;
   text-align: center;
 
   .emailInput {
     height: 40px;
-    width: 500px;
-    margin: 20px;
+    width: 400px;
+    margin-bottom: 30px;
     border-style: solid;
     border-width: 3px;
-    border-color: $color-borders;
+    border-color: $color-contrast;
     color: $color-borders;
     font-family: "Lato";
     font-size: modular-scale(1);
+    margin-right: 0;
   }
 
   .submitButton {
-    height: 65px;
-    width: 250px;
-    border-style: none;
-    @include linear-gradient($color-green, $color-teal);
+    height: 40px;
+    width: 200px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: $color-contrast;
+    background-color: $color-contrast;
     color: $color-background-light;
     font-family: "Lato";
-    font-size: modular-scale(1.5);
+    font-size: modular-scale(1);
+    padding: 0;
+    margin: 0;
   }
 }
