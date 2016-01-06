@@ -4,7 +4,7 @@ $tablet-landscape-width: 1024px;
 $desktop-width: 1440px;
 
 @mixin lg-mobile {
-  @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-portrait-width - 1}) {
+  @media (min-width: #{$lg-mobile-width}) and (max-width: #{$tablet-portrait-width - 1}) {
     @content;
   }
 }

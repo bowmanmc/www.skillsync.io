@@ -1,4 +1,4 @@
-$modular-scale-base: 0.8em;
+$modular-scale-base: 1em;
 
 h1, h2, h3, h4, h5 {
   font-family: "Lato";
@@ -7,26 +7,80 @@ h1, h2, h3, h4, h5 {
 
 p {
   font-family: "Merriweather";
-  font-size: modular-scale(1);
+  font-size: modular-scale(1, 0.7em);
+
+  @include lg-mobile {
+    font-size: modular-scale(1, 0.9em);
+  }
+
+  @include tablet-landscape {
+    font-size: modular-scale(1);
+  }
+
   line-height: 1.3;
 }
 
 h1 {
-  font-size: modular-scale(5);
+  font-size: modular-scale(5, 0.7em);
+
+  @include lg-mobile {
+    font-size: modular-scale(5, 0.9em);
+  }
+
+  @include tablet-landscape {
+    font-size: modular-scale(5);
+  }
+
 }
 
 h2 {
-  font-size: modular-scale(4);
+  font-size: modular-scale(4, 0.7em);
+
+  @include lg-mobile {
+    font-size: modular-scale(4, 0.9em);
+  }
+
+  @include tablet-landscape {
+    font-size: modular-scale(4);
+  }
+
 }
 
 h3 {
-  font-size: modular-scale(3);
+  font-size: modular-scale(3, 0.7em);
+
+  @include lg-mobile {
+    font-size: modular-scale(3, 0.9em);
+  }
+
+  @include tablet-landscape {
+    font-size: modular-scale(3);
+  }
+
 }
 
 h4 {
-  font-size: modular-scale(2);
+  font-size: modular-scale(2, 0.7em);
+
+  @include lg-mobile {
+    font-size: modular-scale(2, 0.9em);
+  }
+
+  @include tablet-landscape {
+    font-size: modular-scale(2);
+  }
+
 }
 
 h5 {
-  font-size: modular-scale(1);
+  font-size: modular-scale(1, 0.7em);
+
+  @include lg-mobile {
+    font-size: modular-scale(1, 0.9em);
+  }
+
+  @include tablet-landscape {
+    font-size: modular-scale(1);
+  }
+
 }
