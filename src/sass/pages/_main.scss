@@ -64,6 +64,14 @@ body {
     font-size: modular-scale(1);
     border-radius: 3.5px;
     padding: 5px;
+
+    @include tablet-portrait {
+      width: 368px;
+    }
+
+    @include tablet-landscape {
+      width: 368px;
+    }
   }
 
   .submitButton {
