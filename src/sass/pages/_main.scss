@@ -13,67 +13,66 @@ $logo-height: 50px;
 
     }
 
-.body {
+body {
   @include span-columns(12);
+  background-color: $color-light-grey;
 }
 
 .home {
-  background:
-    url(/images/monitors-color.png) no-repeat center;
-  background-size: cover;
+  /*background:
+    url(/images/monitors-crop.png) no-repeat center;
+  background-size: cover;*/
   width: 100%;
   margin: 0;
-  height: 800px;
-  color: $color-background-light;
+  /*height: 590px;*/
+  color: $color-txt;
 }
 
 .landingTxt {
-  padding-top: 200px;
+  padding-top: 80px;
   text-align: center;
-  color: $color-background-light;
 
   .tagline {
     margin-bottom: 30px;
-    @include shift(2);
-    @include span-columns(8);
+    @include shift(1);
+    @include span-columns(10);
+    color: $color-dark-teal;
+    font-weight: bold;
   }
 
   .landingP {
-    margin-bottom: 50px;
-    @include shift(3);
-    @include span-columns(6);
+    margin-bottom: 35px;
+    @include shift(1.5);
+    @include span-columns(9);
+    color: $color-txt;
   }
 }
 
 .inputForm {
-  @include shift(3);
-  @include span-columns(6);
+  margin: auto;
   text-align: center;
 
   .emailInput {
-    height: 40px;
-    width: 400px;
-    margin-bottom: 30px;
+    height: 50px;
+    width: 275px;
+    margin-bottom: 38px;
     border-style: solid;
     border-width: 3px;
-    border-color: $color-contrast;
-    color: $color-borders;
+    border-color: $color-dark-green;
+    color: $color-txt-light;
     font-family: "Lato";
     font-size: modular-scale(1);
-    margin-right: 0;
+    border-radius: 3.5px;
   }
 
   .submitButton {
-    height: 40px;
-    width: 200px;
-    border-style: solid;
-    border-width: 3px;
-    border-color: $color-contrast;
-    background-color: $color-contrast;
-    color: $color-background-light;
+    height: 65px;
+    width: 190px;
+    background-color: $color-dark-green;
+    color: $color-light;
     font-family: "Lato";
-    font-size: modular-scale(1);
-    padding: 0;
-    margin: 0;
+    font-size: modular-scale(2);
+    border: none;
+    border-radius: 3.5px;
   }
 }
