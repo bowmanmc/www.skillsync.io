@@ -2,27 +2,15 @@ $lg-mobile-width: 562px;
 $tablet-portrait-width: 768px;
 $tablet-landscape-width: 1024px;
 $desktop-width: 1440px;
+$lg-mobile-max: $tablet-portrait-width - 1;
+$tablet-portrait-max: $tablet-landscape-width - 1;
+$tablet-landscape-max: $desktop-width - 1;
 
-@mixin lg-mobile {
-  @media (min-width: #{$lg-mobile-width}) and (max-width: #{$tablet-portrait-width - 1}) {
-    @content;
-  }
-}
 
-@mixin tablet-portrait {
-  @media (min-width: #{$tablet-portrait-width}) and (max-width: #{$tablet-landscape-width - 1}) {
-    @content;
-  }
-}
+$lg-mobile: new-breakpoint(min-width $lg-mobile-width max-width $lg-mobile-max);
 
-@mixin tablet-landscape {
-  @media (min-width: #{$tablet-landscape-width}) and (max-width: #{$desktop-width - 1}) {
-    @content;
-  }
-}
+$tablet-portrait: new-breakpoint(min-width $tablet-portrait-width max-width $tablet-portrait-max);
 
-@mixin desktop {
-  @media (min-width: #{$desktop-width}) {
-    @content;
-  }
-}
+$tablet-landscape: new-breakpoint(min-width $tablet-landscape-width max-width $tablet-landscape-max);
+
+$desktop: new-breakpoint(min-width $desktop-width);

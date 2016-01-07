@@ -9,19 +9,19 @@ p {
   font-family: "Merriweather";
   font-size: modular-scale(1, 0.7em);
 
-  @include lg-mobile {
+  @include media($lg-mobile) {
     font-size: modular-scale(1, 0.9em);
   }
 
-  @include tablet-portrait {
+  @include media($tablet-portrait) {
     font-size: modular-scale(1, 0.9em);
   }
 
-  @include tablet-landscape {
+  @include media ($tablet-landscape) {
     font-size: modular-scale(1);
   }
 
-  @include desktop {
+  @include media ($desktop) {
     font-size: modular-scale(1);
   }
 
@@ -31,19 +31,19 @@ p {
 h1 {
   font-size: modular-scale(5, 0.7em);
 
-  @include lg-mobile {
+  @include media($lg-mobile) {
     font-size: modular-scale(5, 0.9em);
   }
 
-  @include tablet-portrait {
+  @include media($tablet-portrait) {
     font-size: modular-scale(5, 0.9em);
   }
 
-  @include tablet-landscape {
+  @include media ($tablet-landscape) {
     font-size: modular-scale(5);
   }
 
-  @include desktop {
+  @include media ($desktop) {
     font-size: modular-scale(5);
   }
 
@@ -52,19 +52,19 @@ h1 {
 h2 {
   font-size: modular-scale(4, 0.7em);
 
-  @include lg-mobile {
+  @include media($lg-mobile) {
     font-size: modular-scale(4, 0.9em);
   }
 
-  @include tablet-portrait {
+  @include media($tablet-portrait) {
     font-size: modular-scale(4, 0.9em);
   }
 
-  @include tablet-landscape {
+  @include media ($tablet-landscape) {
     font-size: modular-scale(4);
   }
 
-  @include desktop {
+  @include media ($desktop) {
     font-size: modular-scale(4);
   }
 
@@ -73,19 +73,19 @@ h2 {
 h3 {
   font-size: modular-scale(3, 0.7em);
 
-  @include lg-mobile {
+  @include media($lg-mobile) {
     font-size: modular-scale(3, 0.9em);
   }
 
-  @include tablet-portrait {
+  @include media($tablet-portrait) {
     font-size: modular-scale(3, 0.9em);
   }
 
-  @include tablet-landscape {
+  @include media ($tablet-landscape) {
     font-size: modular-scale(3);
   }
 
-  @include desktop {
+  @include media ($desktop) {
     font-size: modular-scale(3);
   }
 
@@ -94,19 +94,19 @@ h3 {
 h4 {
   font-size: modular-scale(2, 0.7em);
 
-  @include lg-mobile {
+  @include media($lg-mobile) {
     font-size: modular-scale(2, 0.9em);
   }
 
-  @include tablet-portrait {
+  @include media($tablet-portrait) {
     font-size: modular-scale(2, 0.9em);
   }
 
-  @include tablet-landscape {
+  @include media ($tablet-landscape) {
     font-size: modular-scale(2);
   }
 
-  @include desktop {
+  @include media ($desktop) {
     font-size: modular-scale(2);
   }
 
@@ -115,19 +115,19 @@ h4 {
 h5 {
   font-size: modular-scale(1, 0.7em);
 
-  @include lg-mobile {
+  @include media($lg-mobile) {
     font-size: modular-scale(1, 0.9em);
   }
 
-  @include tablet-portrait {
+  @include media($tablet-portrait) {
     font-size: modular-scale(1, 0.9em);
   }
 
-  @include tablet-landscape {
+  @include media ($tablet-landscape) {
     font-size: modular-scale(1);
   }
 
-  @include desktop {
+  @include media ($desktop) {
     font-size: modular-scale(1);
   }
 

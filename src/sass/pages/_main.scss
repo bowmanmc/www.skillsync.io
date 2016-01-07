@@ -24,13 +24,23 @@ body {
   background-size: cover;*/
   width: 100%;
   margin: 0;
-  /*height: 590px;*/
+  height: 590px;
   color: $color-txt;
+
+  @include media ($tablet-landscape) {
+    background: url(/images/monitors-crop.png) no-repeat center;
+    background-size: cover;
+    height: 614px;
+  }
 }
 
 .landingTxt {
   padding-top: 80px;
   text-align: center;
+
+  @include media ($tablet-landscape) {
+    padding-top: 120px;
+  }
 
   .tagline {
     margin-bottom: 30px;
@@ -38,6 +48,11 @@ body {
     @include span-columns(10);
     color: $color-dark-teal;
     font-weight: bold;
+
+    @include media ($tablet-landscape) {
+      @include shift(0);
+      @include span-columns(7);
+    }
   }
 
   .landingP {
@@ -45,6 +60,11 @@ body {
     @include shift(1.5);
     @include span-columns(9);
     color: $color-txt;
+
+    @include media ($tablet-landscape) {
+      @include shift(0);
+      @include span-columns(5);
+    }
   }
 }
 
@@ -65,11 +85,11 @@ body {
     border-radius: 3.5px;
     padding: 5px;
 
-    @include tablet-portrait {
+    @include media ($tablet-portrait) {
       width: 368px;
     }
 
-    @include tablet-landscape {
+    @include media ($tablet-landscape) {
       width: 368px;
     }
   }
