@@ -14,14 +14,18 @@ $logo-height: 50px;
     }
 
 body {
-  @include span-columns(12);
   background-color: $color-light-grey;
+
+  @include media ($tablet-landscape) {
+    background-color: $color-txt;
+  }
+
+  @include media ($desktop) {
+    background-color: $color-txt;
+  }
 }
 
 .home {
-  /*background:
-    url(/images/monitors-crop.png) no-repeat center;
-  background-size: cover;*/
   width: 100%;
   margin: 0;
   height: 590px;
@@ -30,7 +34,13 @@ body {
   @include media ($tablet-landscape) {
     background: url(/images/monitors-crop.png) no-repeat center;
     background-size: cover;
-    height: 614px;
+    height: 650px;
+  }
+
+  @include media ($desktop) {
+    background: url(/images/monitors-crop.png) no-repeat center;
+    background-size: cover;
+    height: 750px;
   }
 }
 
@@ -39,58 +49,89 @@ body {
   text-align: center;
 
   @include media ($tablet-landscape) {
+    padding-top: 100px;
+    max-width: 55%;
+  }
+
+  @include media ($desktop) {
     padding-top: 120px;
+    max-width: 55%;
   }
 
   .tagline {
-    margin-bottom: 30px;
-    @include shift(1);
-    @include span-columns(10);
+    margin: 0 auto 30px;
+    max-width: 95%;
     color: $color-dark-teal;
     font-weight: bold;
 
-    @include media ($tablet-landscape) {
-      @include shift(0);
-      @include span-columns(7);
-    }
   }
 
   .landingP {
-    margin-bottom: 35px;
-    @include shift(1.5);
-    @include span-columns(9);
+    font-family: $heading-stack;
+    font-size: modular-scale(2, 0.7em);
+    margin: 0 auto 35px;
+    max-width: 75%;
     color: $color-txt;
 
     @include media ($tablet-landscape) {
-      @include shift(0);
-      @include span-columns(5);
+      font-size: modular-scale(1);
+    }
+
+    @include media($desktop) {
+      font-size: modular-scale(1);
+      margin-bottom: 50px;
     }
   }
 }
 
+input:focus {
+  outline: none;
+}
+
 .inputForm {
-  margin: auto;
+  //margin: auto;
   text-align: center;
+
+  @include media($tablet-landscape) {
+    max-width: 55%;
+  }
+
+  @include media($desktop) {
+    max-width: 55%;
+  }
 
   .emailInput {
     height: 50px;
     width: 275px;
-    margin-bottom: 38px;
+    margin: 0 auto 38px;
     border-style: solid;
     border-width: 3px;
     border-color: $color-dark-green;
     color: $color-txt-light;
-    font-family: "Lato";
+    font-family: $heading-stack;
     font-size: modular-scale(1);
-    border-radius: 3.5px;
-    padding: 5px;
+    border-radius: 10px;
+    padding: 5px 15px;
+
+    @include media($lg-mobile) {
+      font-size: modular-scale(1);
+    }
 
     @include media ($tablet-portrait) {
       width: 368px;
+      font-size: modular-scale(1);
     }
 
     @include media ($tablet-landscape) {
       width: 368px;
+      font-size: modular-scale(1);
+    }
+
+    @include media ($desktop) {
+      width: 520px;
+      height: 65px;
+      font-size: modular-scale(1);
+      margin-bottom: 50px;
     }
   }
 
@@ -99,9 +140,28 @@ body {
     width: 190px;
     background-color: $color-dark-green;
     color: $color-light;
-    font-family: "Lato";
+    font-family: $heading-stack;
     font-size: modular-scale(2);
     border: none;
-    border-radius: 3.5px;
+    border-radius: 10px;
+    margin: 0 auto;
+
+    @include media($lg-mobile-width) {
+      font-size: modular-scale(1);
+    }
+
+    @include media($tablet-portrait) {
+      font-size: modular-scale(1);
+    }
+
+    @include media($tablet-landscape) {
+      font-size: modular-scale(1);
+    }
+
+    @include media($desktop) {
+      font-size: modular-scale(1);
+      width: 265px;
+      height: 85px;
+    }
   }
 }
