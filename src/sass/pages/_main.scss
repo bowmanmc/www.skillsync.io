@@ -13,34 +13,20 @@ $logo-height: 50px;
 
     }
 
-body {
-  background-color: $color-light-grey;
-
-  @include media ($tablet-landscape) {
-    background-color: $color-txt;
-  }
-
-  @include media ($desktop) {
-    background-color: $color-txt;
-  }
-}
-
 .home {
   width: 100%;
   margin: 0;
-  height: 590px;
+  height: 100%;
   color: $color-txt;
 
   @include media ($tablet-landscape) {
     background: url(/images/monitors-crop.png) no-repeat center;
     background-size: cover;
-    height: 650px;
   }
 
   @include media ($desktop) {
     background: url(/images/monitors-crop.png) no-repeat center;
     background-size: cover;
-    height: 750px;
   }
 }
 
