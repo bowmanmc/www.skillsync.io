@@ -138,6 +138,7 @@ input:focus {
   .submitButton {
     -webkit-appearance: none;
     -moz-appearance: none;
+    padding: 0px;
     height: 65px;
     width: 190px;
     background-color: $color-dark-green;
