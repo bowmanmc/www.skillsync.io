@@ -1,129 +1,43 @@
 
-
-.home {
-    width: 100%;
-    margin: 0;
-    height: 100%;
-    color: $color-txt;
-
-    @include media ($tablet-landscape) {
-        background: url(/images/monitors-crop.png) no-repeat center;
-        background-size: cover;
-    }
-
-    @include media ($desktop) {
-        background: url(/images/monitors-crop.png) no-repeat center;
-        background-size: cover;
-    }
-}
-
-.landingTxt {
+.hero {
+    background: url(/images/monitors-crop.png) no-repeat center;
+    background-size: cover;
+    font-family: $heading-stack;
+    min-height: 80%;
     padding-top: 80px;
-    text-align: center;
+}
 
+.hero__content {
+    padding: 2.0em;
+    padding-top: 0;
+    width: 100%;
+
+    @include media($tablet-portrait) {
+        width: 75%;
+    }
     @include media ($tablet-landscape) {
-        padding-top: 100px;
-        max-width: 55%;
+        width: 50%;
     }
-
     @include media ($desktop) {
-        padding-top: 120px;
-        max-width: 55%;
+        width: 50%;
+        max-width: 768px;
     }
 
-    .tagline {
-        margin: 0 auto 30px;
-        max-width: 95%;
+    h1 {
         color: $color-dark-teal;
-        font-weight: bold;
+        font-size: 2.5em;
     }
 
-    .landingP {
-        font-family: $heading-stack;
-        font-size: modular-scale(2, 0.7em);
-        margin: 0 auto 35px;
-        max-width: 75%;
+    p {
         color: $color-txt;
+        padding: 0.75em 4.0em 0.75em 0.5em;
+
         @include media ($tablet-landscape) {
             font-size: modular-scale(1);
         }
         @include media($desktop) {
             font-size: modular-scale(1);
-            margin-bottom: 50px;
-        }
-    }
-}
-
-input:focus {
-    outline: none;
-}
-
-.inputForm {
-    text-align: center;
-    @include media($tablet-landscape) {
-        max-width: 55%;
-    }
-    @include media($desktop) {
-        max-width: 55%;
-    }
-
-    .emailInput {
-        height: 50px;
-        width: 275px;
-        margin: 0 auto 19px;
-        border-style: solid;
-        border-width: 3px;
-        border-color: $color-dark-green;
-        color: $color-txt-light;
-        font-family: $heading-stack;
-        font-size: modular-scale(1);
-        border-radius: 10px;
-        padding: 5px 15px;
-        @include media($lg-mobile) {
-            font-size: modular-scale(1);
-        }
-        @include media ($tablet-portrait) {
-            width: 368px;
-            font-size: modular-scale(1);
-        }
-        @include media ($tablet-landscape) {
-            width: 368px;
-            font-size: modular-scale(1);
-        }
-        @include media ($desktop) {
-            width: 520px;
-            height: 65px;
-            font-size: modular-scale(1);
-            margin-bottom: 25px;
         }
     }
 
-    .submitButton {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        padding: 0;
-        height: 65px;
-        width: 190px;
-        background-color: $color-dark-green;
-        color: $color-light;
-        font-family: $heading-stack;
-        font-size: modular-scale(2);
-        border: none;
-        border-radius: 10px;
-        margin: 0 auto;
-        @include media($lg-mobile-width) {
-            font-size: modular-scale(1);
-        }
-        @include media($tablet-portrait) {
-            font-size: modular-scale(1);
-        }
-        @include media($tablet-landscape) {
-            font-size: modular-scale(1);
-        }
-        @include media($desktop) {
-            font-size: modular-scale(1);
-            width: 265px;
-            height: 85px;
-        }
-    }
-}
+} //.hero
