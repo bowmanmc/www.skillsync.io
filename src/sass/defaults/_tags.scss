@@ -4,12 +4,4 @@ body, html {
 
 body {
   background-color: $color-light-grey;
-
-  @include media ($tablet-landscape) {
-    background-color: $color-txt;
-  }
-
-  @include media ($desktop) {
-    background-color: $color-txt;
-  }
 }
