@@ -1,18 +1,14 @@
 
 .features {
-    background-color: $color-dark-teal;
+    background-color: $color-light-grey;
     @include outer-container(100%);
 }
-
-.features__list {
-
-}
-
 .feature {
-    color: $color-light;
+    color: $color-txt;
+    padding: 0.5em;
+    padding-top: 1.0em;
 
     @include span-columns(12);
-
 
     @include media($tablet-portrait) {
         @include span-columns(6);
@@ -25,6 +21,11 @@
     @include media ($desktop) {
         @include span-columns(4);
         @include omega(3n);
+    }
+
+    h2 {
+        font-size: 2.0em;
+        margin-bottom: 0.25em;
     }
 }
 
@@ -45,7 +46,6 @@
         background: url(/images/monitors-crop.png) no-repeat center;
     }
 }
-
 .hero__content {
     padding: 2.0em;
     padding-top: 0;
@@ -64,7 +64,7 @@
 
     h1 {
         color: $color-dark-teal;
-        font-size: 2.5em;
+        font-size: 3.0em;
     }
 
     p {
@@ -78,5 +78,38 @@
             font-size: modular-scale(1);
         }
     }
-
 } //.hero__content
+
+.pitch {
+    background: $color-dark-teal;
+    color: $color-light;
+    padding: 1.5em 0;
+
+    @include outer-container(100%);
+}
+.pitch__content {
+    padding: 0.5em;
+    @include span-columns(12);
+
+    @include media($tablet-portrait) {
+        @include span-columns(10);
+        @include shift(1);
+    }
+    @include media ($tablet-landscape) {
+        @include span-columns(8);
+        @include shift(2);
+    }
+    @include media ($desktop) {
+        @include span-columns(8);
+        @include shift(2);
+    }
+
+    h2 {
+        font-size: 2.0em;
+        margin-bottom: 0.25em;
+    }
+
+    p {
+        padding: 0.5em 0;
+    }
+}
