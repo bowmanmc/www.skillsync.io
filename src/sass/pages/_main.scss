@@ -1,4 +1,33 @@
 
+.features {
+    background-color: $color-dark-teal;
+    @include outer-container(100%);
+}
+
+.features__list {
+
+}
+
+.feature {
+    color: $color-light;
+
+    @include span-columns(12);
+
+
+    @include media($tablet-portrait) {
+        @include span-columns(6);
+        @include omega(2n);
+    }
+    @include media ($tablet-landscape) {
+        @include span-columns(4);
+        @include omega(3n);
+    }
+    @include media ($desktop) {
+        @include span-columns(4);
+        @include omega(3n);
+    }
+}
+
 .hero {
     background-color: $color-light-grey;
     background-size: cover;
@@ -51,7 +80,3 @@
     }
 
 } //.hero__content
-
-.features {
-    background-color: $color-dark-teal;
-}
