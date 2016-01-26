@@ -1,0 +1,51 @@
+
+.about {
+    min-height: 80%;
+
+    p {
+        margin: 0 auto;
+        width: 95%;
+
+        @include media($tablet-portrait) {
+            width: 80%;
+        }
+        @include media ($tablet-landscape) {
+            width: 80%;
+        }
+        @include media ($desktop) {
+            width: 80%;
+        }
+    }
+}
+
+.about__headshot {
+    border: 1px solid $color-light;
+    border-radius: 50%;
+    box-shadow: 0 0 3px $color-txt;
+    height: 128px;
+    width: 128px;
+}
+
+.about__people {
+    @include outer-container(100%);
+}
+
+.about__person {
+    padding: 1.5em 0;
+    text-align: center;
+
+    @include span-columns(12);
+
+    @include media($tablet-portrait) {
+        @include span-columns(6);
+        @include omega(2n);
+    }
+    @include media ($tablet-landscape) {
+        @include span-columns(6);
+        @include omega(2n);
+    }
+    @include media ($desktop) {
+        @include span-columns(6);
+        @include omega(2n);
+    }
+}

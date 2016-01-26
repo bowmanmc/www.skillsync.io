@@ -5,3 +5,7 @@ body, html {
 body {
   background-color: $color-light-grey;
 }
+
+.page {
+    padding-top: 80px; // position content below the navbar
+}
