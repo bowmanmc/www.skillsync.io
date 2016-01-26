@@ -53,7 +53,8 @@
 
     section {
         padding: 0.5em;
-        padding-top: 1.0em;
+        padding-top: 2.0em;
+        text-align: center;
 
         @include span-columns(12);
 
