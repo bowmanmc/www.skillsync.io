@@ -1,0 +1,23 @@
+
+.blog {
+    padding: 80px 1.0em 2.0em 1.0em;
+
+    @include outer-container(100%);
+}
+
+.blog__posts {
+
+    a {
+        color: $color-teal;
+        text-decoration: none;
+    }
+    a:hover {
+        color: $color-dark-green;
+    }
+
+    hr {
+        border: 0;
+        height: 1px;
+        background: $color-light;
+    }
+}
