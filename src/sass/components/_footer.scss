@@ -2,7 +2,7 @@
     background: $color-txt;
     color: $color-light;
     font-family: $heading-stack;
-    min-height: 256px;
+    padding-bottom: 2.5em;
 }
 
 .footer__copyright {
@@ -59,8 +59,8 @@
         @include span-columns(12);
 
         @include media($tablet-portrait) {
-            @include span-columns(6);
-            @include omega(2n);
+            @include span-columns(4);
+            @include omega(3n);
         }
         @include media ($tablet-landscape) {
             @include span-columns(4);

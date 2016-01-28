@@ -1,7 +1,9 @@
 
 .features {
     background-color: $color-light-grey;
-    @include outer-container(100%);
+    padding-bottom: 2.0em;
+
+    @include outer-container(95%);
 }
 .feature {
     color: $color-txt;
@@ -97,7 +99,7 @@
     @include outer-container(100%);
 }
 .pitch__content {
-    padding: 0.5em;
+    padding: 0.5em 1.0em;
     @include span-columns(12);
 
     @include media($tablet-portrait) {
