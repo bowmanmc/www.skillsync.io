@@ -26,7 +26,6 @@
     }
 
     h2 {
-        font-size: 2.0em;
         margin-bottom: 0.25em;
     }
 
@@ -58,36 +57,43 @@
     }
 }
 .hero__content {
+    border: 1px solid red;
     padding: 2.0em;
     padding-top: 0;
     width: 100%;
 
     @include media($tablet-portrait) {
-        width: 50%;
+        width: 65%;
     }
     @include media ($tablet-landscape) {
-        width: 50%;
+        width: 65%;
     }
     @include media ($desktop) {
-        width: 50%;
-        max-width: 768px;
+        width: 65%;
+        max-width: 838px;
     }
 
-    h1 {
+    h3 {
         color: $color-dark-teal;
-        font-size: 3.0em;
     }
 
     p {
         color: $color-txt;
-        padding: 0.5em;
+        padding: 1em;
 
-        @include media ($tablet-landscape) {
-            font-size: modular-scale(1);
+        @include media($tablet-portrait) {
+            width: 95%;
         }
-        @include media($desktop) {
-            font-size: modular-scale(1);
+
+        @include media($tablet-landscape) {
+            width: 95%;
         }
+
+        @include media ($desktop) {
+            width: 95%;
+            max-width: 768px;
+        }
+
     }
 } //.hero__content
 
@@ -116,7 +122,6 @@
     }
 
     h2 {
-        font-size: 2.0em;
         margin-bottom: 0.25em;
     }
 

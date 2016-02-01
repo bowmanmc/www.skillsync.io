@@ -2,7 +2,7 @@ $modular-scale-base: 1em;
 $heading-stack: "Lato", "Arial", sans-serif;
 $body-stack: "Merriweather", "Georgia", serif;
 
-body {
+body, p {
   font-family: $body-stack;
   font-size: modular-scale(1, 0.7em);
 
