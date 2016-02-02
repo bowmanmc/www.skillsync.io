@@ -108,7 +108,7 @@
     @include outer-container(100%);
 }
 .pitch__content {
-    padding: 0.5em 1.0em;
+    padding: 1.5em 1.0em;
     @include span-columns(12);
 
     @include media($tablet-portrait) {
@@ -125,7 +125,9 @@
     }
 
     h2 {
-        margin-bottom: 0.25em;
+        margin-bottom: 0.5em;
+        line-height: 1.1em;
+        //text-align: center;
     }
 
     p {
