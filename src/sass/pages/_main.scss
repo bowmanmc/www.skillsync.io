@@ -44,7 +44,7 @@
     background-size: cover;
     font-family: $heading-stack;
     min-height: 80%;
-    padding-top: 80px;
+    padding-top: 100px;
 
     @include media($tablet-portrait) {
         background: url(/images/monitors-crop.png) no-repeat center;
@@ -57,7 +57,6 @@
     }
 }
 .hero__content {
-    border: 1px solid red;
     padding: 2.0em;
     padding-top: 0;
     width: 100%;
@@ -74,12 +73,12 @@
     }
 
     h3 {
-        color: $color-dark-teal;
+        color: $color-teal;
     }
 
     p {
         color: $color-txt;
-        padding: 1em;
+        padding: 1.5em 1em;
 
         @include media($tablet-portrait) {
             width: 95%;
@@ -93,12 +92,16 @@
             width: 95%;
             max-width: 768px;
         }
+    }
 
+    .hero__content__form {
+        padding-left: 1em;
+        width: 90%;
     }
 } //.hero__content
 
 .pitch {
-    background: $color-dark-teal;
+    background: $color-teal;
     color: $color-light;
     padding: 1.5em 0;
 

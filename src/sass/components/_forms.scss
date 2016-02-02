@@ -7,7 +7,7 @@ input[type="text"],
 input[type="email"],
 input[type="password"] {
     background: mix(#fff, $color-light-green, 90%);
-    border: $forms-border-size solid $color-dark-green;
+    border: $forms-border-size solid $color-green;
     border-radius: $forms-border-radius;
     color: $color-txt-light;
     display: block;
@@ -23,7 +23,7 @@ input[type="text"]:focus, input[type="text"]:hover,
 input[type="email"]:focus, input[type="email"]:hover,
 input[type="password"]:focus, input[type="password"]:hover {
     background: #fff;
-    border: $forms-border-size solid $color-green;
+    border: $forms-border-size solid $color-light-green;
     color: $color-txt;
 }
 
@@ -31,8 +31,8 @@ input[type="submit"] {
     -webkit-appearance: none;
     -moz-appearance: none;
 
-    background-color: $color-dark-green;
-    border: $forms-border-size solid $color-dark-green;
+    background-color: $color-green;
+    border: $forms-border-size solid $color-green;
     border-radius: $forms-border-radius;
     color: $color-light;
     cursor: pointer;
@@ -41,12 +41,12 @@ input[type="submit"] {
     margin: 0.75em auto;
     padding: 0.5em 1.0em;
     outline: none;
-    text-shadow: 1px 1px 0 darken($color-dark-green, 5%);
+    text-shadow: 1px 1px 1px darken($color-dark-green, 5%);
     transition: $forms-transition;
 }
 
 input[type="submit"]:focus, input[type="submit"]:hover {
-    border: $forms-border-size solid $color-green;
+    border: $forms-border-size solid $color-light-green;
     color: #fff;
-    text-shadow: 0 0 7px darken($color-dark-green, 5%);
+    text-shadow: 1px 1px 1px darken($color-dark-green, 5%);
 }
