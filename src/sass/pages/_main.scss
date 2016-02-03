@@ -52,7 +52,7 @@
     background-color: $color-light-grey;
     background-size: cover;
     font-family: $heading-stack;
-    min-height: 80%;
+    min-height: 60%;
     padding-top: 100px;
 
     @include media($tablet-portrait) {
@@ -60,9 +60,11 @@
     }
     @include media ($tablet-landscape) {
         background: url(/images/monitors-crop.png) no-repeat center;
+        min-height: 80%;
     }
     @include media ($desktop) {
         background: url(/images/monitors-crop.png) no-repeat center;
+        min-height: 80%;
     }
 }
 .hero__content {
@@ -71,7 +73,7 @@
     width: 100%;
 
     @include media($tablet-portrait) {
-        width: 65%;
+        width: 75%;
     }
     @include media ($tablet-landscape) {
         width: 65%;
@@ -90,11 +92,11 @@
         padding: 1.5em 1em;
 
         @include media($tablet-portrait) {
-            width: 95%;
+            width: 75%;
         }
 
         @include media($tablet-landscape) {
-            width: 95%;
+            width: 85%;
         }
 
         @include media ($desktop) {
@@ -106,6 +108,14 @@
     .hero__content__form {
         padding-left: 1em;
         width: 90%;
+
+        @include media($tablet-portrait) {
+            width: 70%;
+        }
+
+        @include media($tablet-landscape) {
+            width: 80%;
+        }
     }
 } //.hero__content
 
