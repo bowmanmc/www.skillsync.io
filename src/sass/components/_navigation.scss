@@ -1,6 +1,7 @@
 
 $nav-height: 50px;
 $logo-height: 42px;
+$nav-transition: all 0.3s;
 
 .nav {
     background-color: transparent;
@@ -38,6 +39,7 @@ $logo-height: 42px;
         letter-spacing: 0.08em;
         padding: 0.75em 1.0em;
         text-decoration: none;
+        transition: $nav-transition;
     }
 
     a:hover {
