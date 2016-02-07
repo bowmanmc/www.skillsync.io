@@ -6,7 +6,7 @@ $nav-transition: all 0.3s;
 .nav {
     background-color: transparent;
     background-color: rgba(#fff, 0.25);
-    border-bottom: 1px solid #fff;
+    //border-bottom: 1px solid #fff;
     font-family: $heading-stack;
     left: 0;
     position: absolute;
@@ -17,11 +17,13 @@ $nav-transition: all 0.3s;
 .nav__items {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: right;
     list-style: none;
+    float: right;
+    margin-right: 1.0em;
 
     li {
-        border-right: 1px solid #fff;
+        //border-right: 1px solid #fff;
         display: flex;
     }
 
@@ -37,14 +39,16 @@ $nav-transition: all 0.3s;
         font-size: 0.85em;
         font-weight: bold;
         letter-spacing: 0.08em;
-        padding: 0.75em 1.0em;
+        padding: 1.5em 1.0em;
         text-decoration: none;
         transition: $nav-transition;
     }
 
     a:hover {
-        background-color: #fff;
-        background-color: rgba(#fff, 0.5);
+        background-color: $color-green;
+        color: $color-light;
+        text-shadow: 1px 1px 1px darken($color-dark-green, 5%);
+        transition: $forms-transition;
     }
 
     div {
@@ -57,5 +61,7 @@ $nav-transition: all 0.3s;
 
     img {
         height: $logo-height;
+        float: left;
+        margin: 0.5em;
     }
 }
