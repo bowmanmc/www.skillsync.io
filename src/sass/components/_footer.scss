@@ -2,12 +2,13 @@
     background: $color-txt;
     color: $color-light;
     font-family: $heading-stack;
-    padding-bottom: 2.5em;
+    padding-bottom: 1.0em;
 }
 
 .footer__copyright {
     font-size: 0.65em;
-    margin: 1.0em 0;
+    margin: 0.5em 0;
+    padding-top: 3em;
 
     .footer__ohio {
         filter: grayscale(100%);
@@ -27,8 +28,6 @@
 .footer__nav {
 
     list-style: none;
-    padding: 0.5em 0;
-    text-align: center;
 
     li {
         display: inline-block;
@@ -44,7 +43,7 @@
     }
 
     li a:hover {
-        color: lighten($color-light, 50%);
+        color: $color-green;
     }
 }
 
@@ -53,7 +52,7 @@
 
     section {
         padding: 0.5em;
-        padding-top: 2.0em;
+        padding-top: 1.0em;
         text-align: center;
 
         @include span-columns(12);
@@ -85,14 +84,14 @@
     }
 
     svg {
-        //fill: $color-light;
         height: 32px;
         width: 32px;
     }
     a {
         fill: $color-light;
+        padding: 0.75em 1.0em;
     }
     a:hover {
-        fill: lighten($color-light, 50%);
+        fill: $color-green;
     }
 }

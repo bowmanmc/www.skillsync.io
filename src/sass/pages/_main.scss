@@ -3,10 +3,8 @@
     background-color: $color-light-grey;
     font-size: 80%;
 
-    @include span-columns(12);
-
     h2 {
-        padding: 1.0em 0 1.0em 0.5em;
+        padding: 0.5em 0 0.5em 0.5em;
         margin-bottom: .5em;
         background-color: $color-green;
         color: $color-light;
@@ -16,15 +14,30 @@
 
 .feature__list {
     margin-bottom: 1em;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
 
     @include outer-container(95%);
+
+    @include media($tablet-portrait) {
+        @include outer-container(90%);
+    }
+
+    @include media($tablet-landscape) {
+        @include outer-container(90%);
+    }
+
+    @include media($desktop) {
+        @include outer-container(90%);
+    }
+
+
 }
 
 $feature_icon_size: 32px;
 .feature {
     color: $color-txt;
     padding-top: 1.0em;
+    padding-right: 0.5em;
 
     @include span-columns(12);
 
@@ -42,20 +55,21 @@ $feature_icon_size: 32px;
     }
 
     p {
-        padding-left: $feature_icon_size * 2;
+        padding-left: $feature_icon_size * 1.5;
+        margin-bottom: 1em;
     }
 
     h3 {
         margin-bottom: 0.25em;
         color: $color-teal;
-        padding-left: $feature_icon_size * 2;
+        padding-left: $feature_icon_size * 1.5;
     }
 
     .feature__icon {
         fill: $color-teal;
         float: left;
         height: $feature_icon_size;
-        margin: 0.5em 0.5em 2.0em 0;
+        margin: 0.75em 0.5em 2.0em 0;
         width: $feature_icon_size;
 
         @include media($lg-mobile) {
