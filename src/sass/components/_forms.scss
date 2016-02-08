@@ -11,7 +11,7 @@ input[type="password"] {
     border-radius: $forms-border-radius;
     color: $color-txt-light;
     display: block;
-    font-size: modular-scale(1);
+    font-size: modular-scale(2);
     margin: 0.5em 0;
     outline: none;
     padding: 0.25em 1.0em;
@@ -37,7 +37,7 @@ input[type="submit"] {
     color: $color-light;
     cursor: pointer;
     display: block;
-    font-size: modular-scale(1);
+    font-size: modular-scale(2);
     margin: 0.75em auto;
     padding: 0.5em 1.0em;
     outline: none;

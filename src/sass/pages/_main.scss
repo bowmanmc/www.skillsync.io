@@ -106,31 +106,32 @@ $feature_icon_size: 32px;
         width: 75%;
     }
     @include media ($tablet-landscape) {
-        width: 65%;
+        width: 70%;
     }
     @include media ($desktop) {
-        width: 65%;
-        max-width: 838px;
+        width: 70%;
+        max-width: 950;
     }
 
-    h2 {
+    h1 {
         color: $color-teal;
     }
 
-    p {
+    h3 {
         color: $color-txt;
         padding: 1.5em 1em;
+        font-weight: normal;
 
         @include media($tablet-portrait) {
-            width: 75%;
+            width: 65%;
         }
 
         @include media($tablet-landscape) {
-            width: 85%;
+            width: 80%;
         }
 
         @include media ($desktop) {
-            width: 95%;
+            width: 80%;
             max-width: 768px;
         }
     }
@@ -140,11 +141,15 @@ $feature_icon_size: 32px;
         width: 90%;
 
         @include media($tablet-portrait) {
-            width: 70%;
+            width: 65%;
         }
 
         @include media($tablet-landscape) {
-            width: 80%;
+            width: 70%;
+        }
+
+        @include media($desktop) {
+            width: 70%;
         }
     }
 } //.hero__content
@@ -173,13 +178,14 @@ $feature_icon_size: 32px;
         @include shift(2);
     }
 
-    h2 {
+    h1 {
         margin-bottom: 0.5em;
         line-height: 1.1em;
         //text-align: center;
     }
 
-    p {
+    h3 {
         padding: 0.5em 0;
+        font-weight: normal;
     }
 }
