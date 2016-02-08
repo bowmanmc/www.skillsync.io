@@ -1,7 +1,7 @@
 
 .about {
 
-    p {
+    p, h2 {
         margin: 0 auto;
         max-width: 1024px;
         width: 95%;
@@ -15,6 +15,11 @@
         @include media ($desktop) {
             width: 80%;
         }
+    }
+
+    h2 {
+        margin-top: 0.25em;
+        margin-bottom: 0.25em;
     }
 }
 
@@ -37,13 +42,27 @@
         @include outer-container(80%);
     }
     @include media ($desktop) {
-        @include outer-container(80%);
+        @include outer-container(70%);
     }
 }
 
 .about__person {
-    padding: 1.5em 0;
-    text-align: center;
+    padding: 0.5em 0 2em 0;
+    text-align: left;
+    margin-top: 1.5em;
+
+    h3 {
+        margin-bottom: 0.25em;
+    }
+    img {
+        float: left;
+        shape-outside: circle();
+        margin: 0 1.5em 1em 0;
+    }
+
+    p {
+        margin: 0;
+    }
 
     @include span-columns(12);
 
@@ -59,4 +78,21 @@
         @include span-columns(6);
         @include omega(2n);
     }
+}
+
+.about__person__email {
+    margin-bottom: 0.5em;
+
+    svg {
+        height: 20px;
+        width: 20px;
+        float: left;
+        margin: 0.1em 0.25em;
+        fill: $color-teal;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
 }
