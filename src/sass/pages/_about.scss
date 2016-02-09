@@ -34,6 +34,7 @@
 .about__people {
     @include outer-container(95%);
     max-width: 1024px;
+    padding-left: 1.5em;
 
     @include media($tablet-portrait) {
         @include outer-container(80%);
@@ -57,7 +58,8 @@
     img {
         float: left;
         shape-outside: circle();
-        margin: 0 1.5em 1em 0;
+        margin-right: 1.5em;
+        margin-bottom: 1em;
     }
 
     p {
@@ -77,7 +79,10 @@
     @include media ($desktop) {
         @include span-columns(6);
         @include omega(2n);
+
     }
+
+
 }
 
 .about__person__email {
