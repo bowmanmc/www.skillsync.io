@@ -90,7 +90,7 @@ web that serves the needs and desires of everyone, not just a select few.
 
 <p class="post__footnote">
 This post originally appeared on
-<a href="https://medium.com/@SkillSync/a-better-web-is-a-more-inclusive-web-58ca345b7150">Medium</a> 
+<a href="https://medium.com/@SkillSync/a-better-web-is-a-more-inclusive-web-58ca345b7150">Medium</a>
 as part of the
 <a href="http://seesparkbox.com/foundry/introducing_the_shift">#startYourShift campaign</a>
 from Sparkbox.

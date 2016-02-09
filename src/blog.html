@@ -5,10 +5,22 @@ permalink: /blog/
 ---
 <div class="page blog">
 
-    <ul class="blog__posts">
-        {% for post in site.posts %}
-        <li>
+    <ul>
+        {% for post in site.posts limit:1%}
+        <li class="first__post">
             <h2><a class="blog__link" href="{{ post.url }}">{{ post.title }}</a></h2>
+            <p class="blog__date">{{ post.date | date: '%B %d, %Y' }}</p>
+            <p>{{ post.excerpt }}</p>
+            <p><a class="blog__link" href="{{ post.url }}">Read More...</a></p>
+            <hr />
+        </li>
+        {% endfor %}
+    </ul>
+
+    <ul class="blog__posts">
+        {% for post in site.posts offset: 1%}
+        <li>
+            <h3><a class="blog__link" href="{{ post.url }}">{{ post.title }}</a></h3>
             <p class="blog__date">{{ post.date | date: '%B %d, %Y' }}</p>
             <p>{{ post.excerpt }}</p>
             <hr />
