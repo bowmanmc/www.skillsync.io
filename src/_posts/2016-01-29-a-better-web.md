@@ -3,6 +3,7 @@ layout: post
 title:  "A Better Web is a More Inclusive Web"
 date:   2016-01-29 12:00:00 -0500
 categories: hiring interview
+image:  /images/the-shift-crop.jpg
 ---
 As members of the web development community, one of the things we can do to
 make the web better is to help our teams become more inclusive and to encourage
