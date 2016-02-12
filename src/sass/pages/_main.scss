@@ -86,14 +86,14 @@ $feature_icon_size: 32px;
     padding-top: 100px;
 
     @include media($tablet-portrait) {
-        background: url(/images/monitors-crop.png) no-repeat center;
+        background: url(/images/monitors-crop.jpg) no-repeat center;
     }
     @include media ($tablet-landscape) {
-        background: url(/images/monitors-crop.png) no-repeat center;
+        background: url(/images/monitors-crop.jpg) no-repeat center;
         min-height: 80%;
     }
     @include media ($desktop) {
-        background: url(/images/monitors-crop.png) no-repeat center;
+        background: url(/images/monitors-crop.jpg) no-repeat center;
         min-height: 80%;
     }
 }
