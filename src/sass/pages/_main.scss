@@ -87,14 +87,17 @@ $feature_icon_size: 32px;
 
     @include media($tablet-portrait) {
         background: url(/images/monitors-crop.jpg) no-repeat center;
+        background-size: cover;
     }
     @include media ($tablet-landscape) {
         background: url(/images/monitors-crop.jpg) no-repeat center;
         min-height: 80%;
+        background-size: cover;
     }
     @include media ($desktop) {
         background: url(/images/monitors-crop.jpg) no-repeat center;
         min-height: 80%;
+        background-size: cover;
     }
 }
 .hero__content {
